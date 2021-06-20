@@ -1,0 +1,14 @@
+class Figure;
+  
+ class Board 
+ {
+     public:
+     Board(int size = 8);
+     Board();
+     Board(const Board& other)
+     Board& operator=(const Board& other);
+     int GetSize() { return m_Size; }
+     private:
+     int n_Size;
+     Figure** n_Board;
+ };
